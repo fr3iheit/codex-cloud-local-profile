@@ -28,7 +28,7 @@ This does not export login state, connector credentials, browser sessions, local
 
 After changing an environment setup script in Codex Cloud, reset the environment cache or start a new task so the updated profile is applied.
 
-## Publish To A Private GitHub Repo
+## Publish To GitHub
 
 Run this locally from this folder:
 
@@ -36,11 +36,11 @@ Run this locally from this folder:
 ./publish-private-github-repo.sh
 ```
 
-The script asks for a GitHub token with hidden input, creates a private repo, commits this bundle, and pushes it to `main`.
+The script asks for a GitHub token with hidden input, creates a private repo, commits this bundle, and pushes it to `main`. You can make the repo public after validating that no local secrets were exported.
 
 Do not paste the token into chat or commit it to a repo. For a classic GitHub token, use `repo` scope. For organization-owned repos, the token also needs permission to create repositories in that organization.
 
-After publishing, configure Codex Cloud to use that private repo, then set the environment setup script to:
+After publishing, configure Codex Cloud to use that repo, then set the environment setup script to:
 
 ```bash
 bash install-codex-cloud-profile.sh
