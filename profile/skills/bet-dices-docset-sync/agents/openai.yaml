@@ -1,0 +1,4 @@
+interface:
+  display_name: "BET_DICES Docset Sync"
+  short_description: "Refresh the BET_DICES agent docset after README-level changes"
+  default_prompt: "Refresh the BET_DICES agent docset, validate it, and summarize what changed."

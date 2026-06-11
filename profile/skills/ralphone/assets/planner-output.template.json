@@ -1,0 +1,43 @@
+{
+  "unit_id": "<unit-id>",
+  "title": "<title>",
+  "goal": "",
+  "success_function": "",
+  "definition_of_done": [],
+  "constraints": [],
+  "non_goals": [],
+  "forbidden_proxies": [],
+  "allowed_surface": [],
+  "forbidden_surface": [],
+  "oracle_plan": {
+    "primary_check": "",
+    "negative_check": "",
+    "notes": ""
+  },
+  "comprehension_oracles": {
+    "required": false,
+    "target_reader": "",
+    "blind_reader": "",
+    "code_aware_adjudicator": ""
+  },
+  "scope_guard": {
+    "allowed_paths": [],
+    "forbidden_paths": [],
+    "non_goals": []
+  },
+  "viability_plan": {
+    "required": false,
+    "gate_question": "",
+    "proof_command": "",
+    "block_if": []
+  },
+  "parallelization": {
+    "layer": "none",
+    "reason": ""
+  },
+  "model_routing": {
+    "mapping": "gpt-5.4-mini:medium",
+    "implementation": "gpt-5.4:high",
+    "review": "gpt-5.4:high"
+  }
+}

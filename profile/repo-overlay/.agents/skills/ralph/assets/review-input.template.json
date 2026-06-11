@@ -1,0 +1,13 @@
+{
+  "unit_id": "<unit-id>",
+  "contract_path": "contract.md",
+  "oracle_artifacts": [],
+  "test_artifacts": [],
+  "viability_artifacts": [],
+  "diff_summary": "",
+  "questions": [
+    "What can still be wrong even if the checks pass?",
+    "What integration or rollout risk remains?",
+    "Did the unit prove that the real input or dataset still exists in sufficient quantity and semantics after filtering?"
+  ]
+}

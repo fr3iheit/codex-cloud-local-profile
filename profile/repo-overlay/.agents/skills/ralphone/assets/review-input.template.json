@@ -1,0 +1,18 @@
+{
+  "unit_id": "<unit-id>",
+  "contract_path": "contract.md",
+  "oracle_artifacts": [],
+  "test_artifacts": [],
+  "scope_artifacts": [],
+  "viability_artifacts": [],
+  "diff_summary": "",
+  "questions": [
+    "What can still be wrong even if the checks pass?",
+    "What integration or rollout risk remains?",
+    "What would a zero-context reader understand incorrectly or fail to understand?",
+    "Did the artifact optimize the user's real success function or only a structural proxy?",
+    "Is there meta, deploy, implementation, or delivery sludge that should not be in the public artifact?",
+    "Did scope_guard_passed prove every changed path is intentional?",
+    "Did the unit prove that the real input or dataset still exists in sufficient quantity and semantics after filtering?"
+  ]
+}

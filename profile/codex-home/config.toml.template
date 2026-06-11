@@ -1,0 +1,65 @@
+model = "gpt-5.5"
+model_auto_compact_token_limit = 220000
+model_catalog_json = "__CODEX_HOME__/model_catalog.override.json"
+model_context_window = 272000
+model_reasoning_effort = "xhigh"
+personality = "pragmatic"
+approval_policy = "never"
+approvals_reviewer = "user"
+sandbox_mode = "danger-full-access"
+
+[agents]
+max_depth = 1
+max_threads = 6
+
+[features]
+apps = true
+codex_hooks = true
+js_repl = false
+memory_tool = true
+multi_agent = true
+prevent_idle_sleep = true
+goals = true
+
+[mcp_servers.chrome_devtools]
+args = ["chrome-devtools-mcp@latest"]
+command = "npx"
+
+[mcp_servers.conductor]
+args = [
+    "-y",
+    "@anthropic-ai/conductor-mcp@latest",
+]
+command = "npx"
+
+[mcp_servers.playwright]
+args = ["@playwright/mcp@latest"]
+command = "npx"
+
+[notice.model_migrations]
+gpt-5 = "gpt-5.4"
+"gpt-5.2-codex" = "gpt-5.4"
+"gpt-5.3-codex" = "gpt-5.4"
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."google-drive@openai-curated"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[profiles."gpt-5.5"]
+model = "gpt-5.5"
+model_auto_compact_token_limit = 220000
+model_context_window = 272000

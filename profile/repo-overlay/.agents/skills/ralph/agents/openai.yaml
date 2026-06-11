@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ralph Autonomous Loop"
+  short_description: "Run a harness-first, test-first Codex loop with artifact-backed state"
+  default_prompt: "Use the Ralph autonomous loop for this task. Break the work into units, create artifact-backed oracles before code, record the baseline failure, route easy bounded tasks to GPT-5.4-mini, parallelize only when surfaces are disjoint, keep the evidence trail in the selected .context/ralph/runs/<run-id> state tree, automatically resume only units active in the current Ralph run until all mandatory gates pass or the user explicitly stops it, do not resume Ralph loops from other runs, projects, or unrelated chats unless the user explicitly asks for that run/workspace, and generalize real-user failures into broad regression classes instead of literal one-off prompts."

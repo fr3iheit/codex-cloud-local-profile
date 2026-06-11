@@ -1,0 +1,29 @@
+{
+  "name": "codex-cloud-local-profile",
+  "created_for": "Codex Cloud setup",
+  "created_date": "2026-06-11",
+  "sensitive_files_excluded": true,
+  "preserved_behavior": [
+    "global AGENTS.md operating rules",
+    "default model, reasoning effort, context and compacting preferences",
+    "approval and sandbox preferences",
+    "feature flags for apps, hooks, memory, multi-agent, goals and browser-adjacent workflows",
+    "Ralph subagent TOML profiles",
+    "generic Ralph safety/stop hooks",
+    "safe custom skills including Ralph and Ralphone",
+    "model catalog override"
+  ],
+  "not_cloud_portable": [
+    "local auth and connector sessions",
+    "macOS Codex app notification and node_repl binary paths",
+    "local project trust paths",
+    "browser sessions, logs, shell snapshots, generated images and attachments",
+    "SQLite runtime state and conversation history",
+    "plugin or connector account authorization; install and authorize plugins in Codex/ChatGPT UI if required",
+    "local-only Computer Use client integration"
+  ],
+  "usage": {
+    "cloud_setup_script": "bash path/to/install-codex-cloud-profile.sh",
+    "repo_overlay": "copy profile/repo-overlay contents to a repository root when setup scripts are unavailable"
+  }
+}
