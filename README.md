@@ -10,6 +10,8 @@ Copy this folder into a private repository or a private setup-assets repo, then 
 bash path/to/codex-cloud-local-profile/install-codex-cloud-profile.sh
 ```
 
+If Codex Cloud is running in a different repository, use the remote GitHub setup snippet in `CODEX_CLOUD_SETUP.md`.
+
 The installer writes:
 
 - `AGENTS.md`, `config.toml`, hooks, rules, model catalog and subagent profiles under `CODEX_HOME`.
